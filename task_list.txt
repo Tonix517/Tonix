@@ -1,0 +1,6 @@
+1. Paging
+2. Process Scheduling
+3. Enable C++
+4. GUI
+---------
+* I'd like to write GUI first, for dev. & debugging convenience

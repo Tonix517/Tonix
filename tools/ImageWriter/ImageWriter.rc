@@ -1,0 +1,193 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ImageWriter.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ImageWriter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMAGEWRITER_DIALOG DIALOGEX 0, 0, 324, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Image Writer for Demo"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Generate",IDC_BGen,87,201,50,16
+    CTEXT           "Booter",IDC_STATIC,19,42,46,14
+    CTEXT           "Loader",IDC_STATIC,19,66,46,14
+    CTEXT           "Kernel",IDC_STATIC,19,90,46,14
+    EDITTEXT        IDC_EDIT_Booter_Path,65,42,110,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Loader_Path,65,66,110,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Kernel_Path,65,90,110,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BBooter_Path,184,42,23,14
+    PUSHBUTTON      "...",IDC_BLoader_Path,184,66,23,14
+    PUSHBUTTON      "...",IDC_BKernel_Path,184,90,23,14
+    EDITTEXT        IDC_EDIT_Loader_Start,262,65,28,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Kernel_Start,262,90,29,14,ES_AUTOHSCROLL
+    CTEXT           "Image Size",IDC_STATIC,24,144,48,9
+    EDITTEXT        IDC_EDIT_Image_Size,74,142,70,15,ES_AUTOHSCROLL | WS_GROUP
+    CTEXT           "MB",IDC_STATIC,148,145,14,10
+    CTEXT           "Image Path",IDC_STATIC,24,167,50,16
+    EDITTEXT        IDC_EDIT_Image_Path,74,163,70,15,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "...",IDC_BImage_Path,150,164,23,15,WS_GROUP
+    CTEXT           "Image Writer ver 0.1",IDC_STATIC,55,12,190,16
+    GROUPBOX        "Parts Param",IDC_STATIC,15,24,291,91
+    GROUPBOX        "Image Param",IDC_STATIC,15,126,292,63
+    PUSHBUTTON      "Exit",IDC_BExit,181,201,50,16
+    LTEXT           "From Sect.   0",IDC_STATIC,217,42,66,13
+    CTEXT           "From Sect.",IDC_STATIC,217,90,42,15
+    CTEXT           "From Sect.",IDC_STATIC,217,65,42,15
+    CTEXT           "Head",IDC_STATIC,205,140,32,9
+    CTEXT           "SPT",IDC_STATIC,206,156,28,10
+    CTEXT           "Cylinder",IDC_STATIC,206,172,33,8
+    EDITTEXT        IDC_EDIT_Head_Num,242,137,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Spt_Num,242,154,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Cylinder_Num,242,170,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Floppy",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,143,36,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "None"
+            VALUE "FileDescription", "None"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ImageWriter.exe"
+            VALUE "LegalCopyright", "None"
+            VALUE "OriginalFilename", "ImageWriter.exe"
+            VALUE "ProductName", "Tonix OS Utils"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IMAGEWRITER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 323
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ImageWriter.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
